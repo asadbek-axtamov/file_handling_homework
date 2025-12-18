@@ -6,5 +6,12 @@ def main(data:str):
     Returns:
         int: return answer
     """
-
+    file = open(data)
+    d = file.readlines()
+    l = []
+    for i in d:
+        l.append(len(i)-1)
+    return max(l)
+print(main('data/data10.txt'))
+    
 # Read data from file
